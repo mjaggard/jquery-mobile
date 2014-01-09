@@ -777,9 +777,9 @@ module.exports = function( grunt ) {
 						process: function( content ) {
 							var version = grunt.file.readJSON( "bower.json" ).dependencies[ "jquery-ui" ];
 							if ( /#/.test( version ) ) {
-								version = version.split( "#" )[1];
+								version = version.split( "#" )[ 1 ];
 							}
-							return content.replace(/@VERSION/g, version);
+							return content.replace( /@VERSION/g, version );
 						}
 					}
 				},
